@@ -1,0 +1,38 @@
+//
+//  PrefixHeader.pch
+//  KXBrower
+//
+//  Created by apple on 17/3/24.
+//  Copyright © 2017年 KXX. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+//2. 颜色
+#define KXColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+
+//4. 屏幕宽 高
+/***********屏幕适配*************/
+#define iphone6P (QYScreenH == 736)
+#define iphone6 (QYScreenH == 667)
+#define iphone5 (QYScreenH == 568)
+#define iphone4 (QYScreenH == 480)
+/***********屏幕适配*************/
+#define KXHistoryRecordArr  @"KXHistoryRecordArr"        //记录搜索的过的数据
+#define KXCurrentTextFieldStr  @"KXCurrentTextFieldStr"  //当前搜索词
+#define KXHotSearchBackDataDic @"KXHotSearchBackDataDic" //记录返回的 热门搜索 数据
+#define KXPopTwoNotification   @"KXPopTwoNotification"   //跳转通知
+
+#define KXScreenH  [UIScreen mainScreen].bounds.size.height
+#define KXScreenW  [UIScreen mainScreen].bounds.size.width
+#define KXNavBarH   64
+
+#define  KXSearchHistoryCollectionCellID  @"KXSearchHistoryCollectionCellID"
+
+
+
+
+#endif /* PrefixHeader_pch */
